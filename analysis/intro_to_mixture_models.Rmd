@@ -33,7 +33,7 @@ prices      <- numeric(NUM.SAMPLES)
 for(i in seq_len(NUM.SAMPLES)) {
   z.i <- rbinom(1,1,0.5)
   if(z.i == 0) prices[i] <- rnorm(1, mean = 9, sd = 1)
-  else prices[i] <- rnorm(1, mean = 20, sd = 1)
+  else prices[i] <- rnorm(1, mean = 20, sd = 2)
 }
 hist(prices)
 ```
